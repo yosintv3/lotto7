@@ -166,6 +166,47 @@
             color: #e63946;
         }
 
+/* Winners Grid */
+        .lucky-winners {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .winner-card {
+            text-align: center;
+            max-width: 150px;
+        }
+
+        .winner-image,
+        .country-flag {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #fff;
+            margin-bottom: 10px;
+        }
+
+        .winner-name {
+            font-weight: bold;
+            margin: 5px 0;
+            font-size: 1em;
+        }
+
+        .winner-country {
+            font-size: 0.9em;
+            color: #ddd;
+        }
+
+        .winner-prize {
+            font-size: 1em;
+            color: #ffe047;
+            font-weight: bold;
+        }
+
 
         footer {
             text-align: center;
@@ -213,6 +254,11 @@
         </table>
         
         
+        <h2>Lucky Lotto 7 Winners</h2>
+        <div class="lucky-winners" id="lucky-winners">
+            <!-- Winners will be dynamically added -->
+        </div>
+
         
         
     </main>

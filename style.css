@@ -46,7 +46,7 @@
 .country-flag {
     position: absolute;
     bottom: 5px; /* Adjusted the distance from the bottom */
-    right: 5px; /* Adjusted the distance from the right */
+    right: 173px; /* Adjusted the distance from the right */
     width: 30px;
     height: 30px;
     border-radius: 50%;

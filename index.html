@@ -116,10 +116,54 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
 
-        .winner-numbers .number-circle {
+ /* Table styling */
+        .winners-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .winners-table th,
+        .winners-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .winners-table th {
+            background-color: #ffe047;
+            color: #333;
+        }
+
+        .winners-table tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .winners-table tr:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .winners-table td span {
+            display: inline-block;
+            margin: 0 5px;
+        }
+
+        .main-number {
             background: #ffe047;
             color: #000;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 50%;
         }
+
+        .bonus-number {
+            background: #fff;
+            color: #e63946;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 50%;
+        }
+
 
         footer {
             text-align: center;
@@ -149,10 +193,26 @@
             <div class="numbers" id="numbers"></div>
         </div>
 
-        <div class="latest-winner">
-            <h2>Latest Lotto 7 Winning Numbers</h2>
-            <div id="winner-numbers" class="numbers">Loading...</div>
-        </div>
+        
+        
+        <h2>Previous Lotto 7 Winners</h2>
+        <table class="winners-table" id="winners-table">
+            <thead>
+                <tr>
+                    <th>Series No.</th>
+                    <th>Date</th>
+                    <th>Main Numbers</th>
+                    <th>Bonus Numbers</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Rows will be added dynamically -->
+            </tbody>
+        </table>
+        
+        
+        
+        
     </main>
     <footer>
         <p>&copy; 2024 Lotto7Generator.com | Wishing you success and happiness!</p>

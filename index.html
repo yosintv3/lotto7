@@ -116,7 +116,7 @@
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
 
- /* Table styling */
+/* Table styling */
         .winners-table {
             width: 100%;
             border-collapse: collapse;
@@ -144,24 +144,26 @@
         }
 
         .winners-table td span {
-            display: inline-block;
-            margin: 0 5px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            margin: 5px; /* Add spacing between circles */
+            border-radius: 50%;
+            font-weight: bold;
+            font-size: 1em;
+            flex-shrink: 0; /* Prevent squishing */
         }
 
         .main-number {
             background: #ffe047;
             color: #000;
-            font-weight: bold;
-            padding: 5px 10px;
-            border-radius: 50%;
         }
 
         .bonus-number {
             background: #fff;
             color: #e63946;
-            font-weight: bold;
-            padding: 5px 10px;
-            border-radius: 50%;
         }
 
 

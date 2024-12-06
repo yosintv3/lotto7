@@ -1,37 +1,30 @@
 [
     {
         "name": "John Doe",
-        "country": "Japan",
-        "prize": "¥100,000,000",
+        "country": "USA",
+        "prize": "¥770,334,000",
         "image": "https://plus.unsplash.com/premium_photo-1689530775582-83b8abdb5020?fm=jpg",
         "flag": "https://images.fotmob.com/image_resources/logo/teamlogo/6713.png"
     },
     {
-        "name": "Jane Smith",
-        "country": "USA",
-        "prize": "¥50,000,000",
-        "image": "https://example.com/images/winner2.jpg",
-        "flag": "https://example.com/images/flag2.jpg"
+        "name": " Asmit Rai",
+        "country": "Nepal",
+        "prize": "¥33,08,000",
+        "image": "https://t3.ftcdn.net/jpg/07/72/07/02/360_F_772070223_m2tqMfNW4DSpmTS0QorQvlta9Qeyc4As.jpg",
+        "flag": "https://images.fotmob.com/image_resources/logo/teamlogo/95799.png"
     },
     {
         "name": "Carlos Alvarez",
         "country": "Spain",
-        "prize": "¥30,000,000",
-        "image": "https://example.com/images/winner3.jpg",
-        "flag": "https://example.com/images/flag3.jpg"
+        "prize": "¥3,01,000",
+        "image": "https://static01.nyt.com/images/2022/09/09/opinion/carlos-lozada-circle/carlos-lozada-circle-mediumSquareAt3X.png",
+        "flag": "https://images.fotmob.com/image_resources/logo/teamlogo/6720.png"
     },
     {
         "name": "Maria Garcia",
         "country": "Mexico",
-        "prize": "¥20,000,000",
-        "image": "https://example.com/images/winner4.jpg",
-        "flag": "https://example.com/images/flag4.jpg"
-    },
-    {
-        "name": "Lucas Mendoza",
-        "country": "Argentina",
-        "prize": "¥10,000,000",
-        "image": "https://example.com/images/winner5.jpg",
-        "flag": "https://example.com/images/flag5.jpg"
+        "prize": "¥20,000",
+        "image": "https://www.doherty.edu.au/uploads/people_img/_square-crop/Maria_Liaskos.jpg",
+        "flag": "https://images.fotmob.com/image_resources/logo/teamlogo/6710.png"
     }
 ]

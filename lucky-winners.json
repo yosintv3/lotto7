@@ -1,7 +1,7 @@
 [
     {
         "name": "John Doe",
-        "image": "winners-images/john.jpg",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlU4CRN2w1rhCahVyMTt7Vpc3r2fRNsooPWg&s",
         "country": "Japan",
         "flag": "winners-images/japan.png",
         "prize": "¥1,000,000,000"

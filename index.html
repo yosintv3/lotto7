@@ -237,28 +237,48 @@
             });
         }
 
-        // Fetch latest winners from JSON
-        function fetchLatestWinners() {
+// Fetch previous winners data
+        function fetchPreviousWinners() {
             fetch('winners.json')
                 .then(response => response.json())
                 .then(data => {
-                    const winnerNumbersContainer = document.getElementById('winner-numbers');
-                    winnerNumbersContainer.innerHTML = ''; // Clear existing data
+                    const tableBody = document.getElementById('table-body');
+                    tableBody.innerHTML = ''; // Clear existing rows
 
-                    // Add main numbers
-                    data.numbers.forEach(number => {
-                        const circle = document.createElement('div');
-                        circle.className = 'number-circle';
-                        circle.textContent = number;
-                        winnerNumbersContainer.appendChild(circle);
-                    });
+                    data.forEach(winner => {
+                        const row = document.createElement('tr');
 
-                    // Add bonus numbers
-                    data.bonus.forEach(bonus => {
-                        const circle = document.createElement('div');
-                        circle.className = 'bonus-circle';
-                        circle.textContent = bonus;
-                        winnerNumbersContainer.appendChild(circle);
+                        // Series No.
+                        const seriesCell = document.createElement('td');
+                        seriesCell.textContent = winner.series;
+                        row.appendChild(seriesCell);
+
+                        // Date
+                        const dateCell = document.createElement('td');
+                        dateCell.textContent = winner.date;
+                        row.appendChild(dateCell);
+
+                        // Main Numbers
+                        const numbersCell = document.createElement('td');
+                        winner.numbers.forEach(number => {
+                            const span = document.createElement('span');
+                            span.className = 'main-number';
+                            span.textContent = number;
+                            numbersCell.appendChild(span);
+                        });
+                        row.appendChild(numbersCell);
+
+                        // Bonus Numbers
+                        const bonusCell = document.createElement('td');
+                        winner.bonus.forEach(bonus => {
+                            const span = document.createElement('span');
+                            span.className = 'bonus-number';
+                            span.textContent = bonus;
+                            bonusCell.appendChild(span);
+                        });
+                        row.appendChild(bonusCell);
+
+                        tableBody.appendChild(row);
                     });
                 })
                 .catch(error => {
@@ -266,10 +286,8 @@
                 });
         }
 
-        // Load winners on page load
-        window.onload = function () {
-            fetchLatestWinners();
-        };
+        // Fetch winners data on page load
+        window.onload = fetchPreviousWinners;
     </script>
 </body>
 </html>

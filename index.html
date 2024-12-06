@@ -175,11 +175,6 @@
                 circle.textContent = number;
                 numbersContainer.appendChild(circle);
             });
-            const bonus = Math.floor(Math.random() * 37) + 1;
-            const bonusCircle = document.createElement('div');
-            bonusCircle.className = 'bonus-circle';
-            bonusCircle.textContent = bonus;
-            numbersContainer.appendChild(bonusCircle);
         }
 
         // Fetch latest winners from JSON

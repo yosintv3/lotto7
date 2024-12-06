@@ -1,0 +1,37 @@
+[
+    {
+        "name": "John Doe",
+        "country": "Japan",
+        "prize": "¥100,000,000",
+        "image": "https://example.com/images/winner1.jpg",
+        "flag": "https://example.com/images/flag1.jpg"
+    },
+    {
+        "name": "Jane Smith",
+        "country": "USA",
+        "prize": "¥50,000,000",
+        "image": "https://example.com/images/winner2.jpg",
+        "flag": "https://example.com/images/flag2.jpg"
+    },
+    {
+        "name": "Carlos Alvarez",
+        "country": "Spain",
+        "prize": "¥30,000,000",
+        "image": "https://example.com/images/winner3.jpg",
+        "flag": "https://example.com/images/flag3.jpg"
+    },
+    {
+        "name": "Maria Garcia",
+        "country": "Mexico",
+        "prize": "¥20,000,000",
+        "image": "https://example.com/images/winner4.jpg",
+        "flag": "https://example.com/images/flag4.jpg"
+    },
+    {
+        "name": "Lucas Mendoza",
+        "country": "Argentina",
+        "prize": "¥10,000,000",
+        "image": "https://example.com/images/winner5.jpg",
+        "flag": "https://example.com/images/flag5.jpg"
+    }
+]

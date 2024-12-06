@@ -45,12 +45,13 @@
 
 .country-flag {
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 5px; /* Adjusted the distance from the bottom */
+    right: 5px; /* Adjusted the distance from the right */
     width: 30px;
     height: 30px;
     border-radius: 50%;
     border: 2px solid #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: Adds a subtle shadow for the flag */
 }
 
 .winner-details {
@@ -73,6 +74,12 @@
     font-size: 1.2em;
     font-weight: bold;
     color: #ff6f61;
+}
+
+.winner-date,
+.winner-series {
+    font-size: 0.9em;
+    color: #555;
 }
 
 /* Responsive Design */

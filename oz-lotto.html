@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generate your lucky Lotto 7 numbers with ease! Discover previous winners, learn about Lotto 7 in Japan, and get inspired to win big.">
+    <meta name="keywords" content="Lotto 7, Lucky Number Generator, Lotto Japan, Winning Numbers, Lotto 7 Winners, Lotto Tips, Jackpot">
+    <meta name="author" content="https://lotto7.getemoji.online/">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="Lotto 7 Generator - Japan">
+    <meta property="og:description" content="Generate your lucky Lotto 7 numbers with ease! Discover previous winners and learn about Lotto 7 in Japan.">
+    <meta property="og:image" content="/"> <!-- Replace with actual image URL -->
+    <meta property="og:url" content="https://lotto7.getemoji.online/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Metadata -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Lotto 7 Generator - Japan">
+    <meta name="twitter:description" content="Generate your lucky Lotto 7 numbers with ease! Discover previous winners and learn about Lotto 7 in Japan.">
+    <meta name="twitter:image" content="/"> <!-- Replace with actual image URL -->
+    <title>Lotto7Generator.com - Lotto 7 Lucky Number Generator </title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <link rel="shortcut icon" href="//cdn.lottolyzer.com/images/favicon.ico">
+    <link rel="apple-touch-icon" href="//cdn.lottolyzer.com/apple-touch-icon.png" />
+
+    <style>
+        /* Site Style */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: linear-gradient(to bottom, #1e3c72, #2a5298);
+            color: #fff;
+        }
+
+        header {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .content {
+            text-align: left;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .content h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #ffe047;
+        }
+
+        .content p {
+            font-size: 1em;
+            line-height: 1.8em;
+        }
+
+        .generator {
+            margin-top: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .generator button {
+            background: #ffe047;
+            color: #333;
+            font-size: 1.2em;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .generator button:hover {
+            background: #f7d700;
+        }
+
+        
+        .numbers {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .number-circle {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            color: #333;
+            font-size: 1.5em;
+            font-weight: bold;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .bonus-circle {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            color: #e63946;
+            font-size: 1.5em;
+            font-weight: bold;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+/* Table styling */
+        .winners-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        .winners-table th,
+        .winners-table td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .winners-table th {
+            background-color: #ffe047;
+            color: #333;
+        }
+
+        .winners-table tr:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .winners-table tr:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .winners-table td span {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            margin: 5px; /* Add spacing between circles */
+            border-radius: 50%;
+            font-weight: bold;
+            font-size: 1em;
+            flex-shrink: 0; /* Prevent squishing */
+        }
+
+        .main-number {
+            background: #ffe047;
+            color: #000;
+        }
+
+        .bonus-number {
+            background: #fff;
+            color: #e63946;
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+    
+<body>
+    <header>
+        <h1>Lotto 7 Lucky Number Generator</h1>
+        <p>Good luck on your journey to becoming a millionaire!</p>
+    </header>
+    <main>
+
+
+        
+        <div class="content">
+            <h2>What is Lotto 7?</h2>
+            <p>Lotto 7 is one of Japan's most popular lottery games, where players select 7 numbers from a range of 1 to 37. 
+               With massive jackpots and exciting draws, it’s no wonder Lotto 7 has become a favorite for many. The draw is held every Friday, and the jackpot can reach up to ¥1 billion or more!</p>
+            <p>Feeling lucky? Use our Lotto 7 generator to get your numbers and start dreaming big today!</p>
+        </div>
+
+<center>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7981191925382455"
+     data-ad-slot="9016560911"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script> 
+</center>
+
+
+
+        
+        <div class="generator">
+            <h2>Generate Your Lucky Numbers</h2>
+            <button onclick="generateNumbers()">Generate Numbers</button>
+            <div class="numbers" id="numbers"></div>
+        </div>
+
+
+
+<br>
+<center>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-7981191925382455"
+     data-ad-slot="9016560911"
+     data-ad-format="horizontal"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script> 
+</center>
+
+        
+        
+        <h2>Previous Lotto 7 Winners</h2>
+        <table class="winners-table" id="winners-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Series No.</th>
+                    <th>Main Numbers</th>
+                    <th>Bonus Numbers</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Rows will be added dynamically -->
+            </tbody>
+        </table>
+
+        
+<div><br></div>
+<!-- Winners Section -->
+    <section id="lotto-winners">
+        <h2>Lotto 7 Previous Winners</h2>
+        <div class="lucky-winners" id="winners-container">
+            <!-- Dynamic Winners Data will be inserted here -->
+        </div>
+    </section>
+
+        
+        
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Lotto7Generator.com | Wishing you success and happiness!</p>
+    </footer>
+
+<!-- BEGIN: Powered by Supercounters.com -->
+<center><script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script><script type="text/javascript">sc_online_i(1704191,"ffffff","e61c1c");</script><br><noscript><a href="https://www.supercounters.com/">free online counter</a></noscript>
+</center>
+<!-- END: Powered by Supercounters.com -->
+
+    
+    <script src="app.js"></script> <!-- Link to your JavaScript file -->
+
+    <script>
+        // Lotto 7 Number Generator Function
+        function generateNumbers() {
+            const numbers = new Set();
+            while (numbers.size < 7) {
+                const randomNumber = Math.floor(Math.random() * 47) + 1;
+                numbers.add(randomNumber);
+            }
+            const sortedNumbers = Array.from(numbers).sort((a, b) => a - b);
+            const numbersContainer = document.getElementById('numbers');
+            numbersContainer.innerHTML = ''; // Clear previous numbers
+            sortedNumbers.forEach(number => {
+                const circle = document.createElement('div');
+                circle.className = 'number-circle';
+                circle.textContent = number;
+                numbersContainer.appendChild(circle);
+            });
+        }
+
+// Fetch previous winners data
+        function fetchPreviousWinners() {
+            fetch('winners.json')
+                .then(response => response.json())
+                .then(data => {
+                    const tableBody = document.getElementById('table-body');
+                    tableBody.innerHTML = ''; // Clear existing rows
+
+                    data.forEach(winner => {
+                        const row = document.createElement('tr');
+
+                        // Series No.
+                        const seriesCell = document.createElement('td');
+                        seriesCell.textContent = winner.series;
+                        row.appendChild(seriesCell);
+
+                        // Date
+                        const dateCell = document.createElement('td');
+                        dateCell.textContent = winner.date;
+                        row.appendChild(dateCell);
+
+                        // Main Numbers
+                        const numbersCell = document.createElement('td');
+                        winner.numbers.forEach(number => {
+                            const span = document.createElement('span');
+                            span.className = 'main-number';
+                            span.textContent = number;
+                            numbersCell.appendChild(span);
+                        });
+                        row.appendChild(numbersCell);
+
+                        // Bonus Numbers
+                        const bonusCell = document.createElement('td');
+                        winner.bonus.forEach(bonus => {
+                            const span = document.createElement('span');
+                            span.className = 'bonus-number';
+                            span.textContent = bonus;
+                            bonusCell.appendChild(span);
+                        });
+                        row.appendChild(bonusCell);
+
+                        tableBody.appendChild(row);
+                    });
+                })
+                .catch(error => {
+                    console.error("Error fetching winners:", error);
+                });
+        }
+
+        // Fetch winners data on page load
+        window.onload = fetchPreviousWinners;
+    </script>
+</body>
+</html>
